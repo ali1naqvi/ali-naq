@@ -60,9 +60,7 @@ education:
 work:
   - position: Graduate Teaching Assistant
     company_name: McMaster University
-    company_url: ''
-    company_logo: ''
-      year: Sep 2023 - Present
+    year: Sep 2023 - Present
     summary: |2-
       Graduate Teaching Assistant for:
         -COMP 1000: Key Concepts in Computer Science
@@ -71,15 +69,11 @@ work:
         -COMP 3300: Operating Systems
   - position: ML Research Intern
     company_name: Glendor, Inc
-    company_url: ''
-    company_logo: ''
     year: Jan 2023 - Apr 2023
     summary: |2-
       Research on PDF processing and analyzing sensitive medical data using various techniques (NLP).
   - position: Teaching Assistant
     company_name: McMaster University
-    company_url: ''
-    company_logo: ''
     year: Jan 2022 - Apr 2023
     summary: |2-
       Graduate Teaching Assistant for:
