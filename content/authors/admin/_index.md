@@ -62,8 +62,7 @@ work:
     company_name: McMaster University
     company_url: ''
     company_logo: ''
-    date_start: Sep 2023 - Present
-    date_end: ''
+      year: Sep 2023 - Present
     summary: |2-
       Graduate Teaching Assistant for:
         -COMP 1000: Key Concepts in Computer Science
@@ -74,16 +73,14 @@ work:
     company_name: Glendor, Inc
     company_url: ''
     company_logo: ''
-    date_start: Jan 2023 - Apr 2023
-    date_end: ''
+    year: Jan 2023 - Apr 2023
     summary: |2-
       Research on PDF processing and analyzing sensitive medical data using various techniques (NLP).
   - position: Teaching Assistant
     company_name: McMaster University
     company_url: ''
     company_logo: ''
-    date_start: Jan 2022 - Apr 2023
-    date_end: ''
+    year: Jan 2022 - Apr 2023
     summary: |2-
       Graduate Teaching Assistant for:
         -COMPSCI 2SD3: Concurrent Systems
