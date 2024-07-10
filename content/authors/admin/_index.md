@@ -12,6 +12,7 @@ last_name: Naqvi
 # Status emoji
 status:
   icon: 🌜
+
 # Is this the primary user of the site?
 superuser: true
 
@@ -69,7 +70,7 @@ work:
         -COMP 2067: Programming for Beginners
         -COMP 2097: Social Media and Mobile Technology for End Users
         -COMP 3300: Operating Systems
-  position: ML Research Intern
+  - position: ML Research Intern
     company_name: Glendor, Inc
     company_url: ''
     company_logo: ''
@@ -87,7 +88,6 @@ work:
       Graduate Teaching Assistant for:
         -COMPSCI 2SD3: Concurrent Systems
         -COMPSCI 3GC3: Computer Graphics
-
 ---
 
 ## About Me
