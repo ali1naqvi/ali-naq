@@ -88,6 +88,8 @@ work:
         -COMPSCI 2SD3: Concurrent Systems
         -COMPSCI 3GC3: Computer Graphics
 
+---
+
 ## About Me
 I am a Computer Science MSc student researching evolutionary computation at McMaster University, supervised by Dr. Stephen Kelly. Prior to this, I completed undergraduate degrees in Computer Science specializing in AI with a minor in Statistics at the University of Windsor.
 
