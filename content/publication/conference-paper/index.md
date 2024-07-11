@@ -26,8 +26,7 @@ publication_short: In *ALife*
 abstract: Artificial Intelligence (AI) has achieved significant milestones in fields governed by clear rules, such as theorem proving and strategy games like chess. However, applying AI to music composition presents a unique challenge due to the subjective nature of evaluating creative work; the difficulty in designing a fitness function capable of measuring the creativity and uniqueness of solutions remains an unsolved issue. Even in the realm of generative machine learning, the focus has been modelling large datasets and producing plausible recreations rather than generating novel works or simulating the creative process itself. 
 Music is widely regarded as a product of evolution, with theories on the cultural evolution of music and ethnomusicology studies suggesting music and culture co-evolve. This insight leads to the proposition that genetic programming could foster innovative compositions by modelling evolutionary processes. Specifically, an evolutionary search for computer programs has great potential for through the discovery of new programs, and {transformational creativity} by automatically encapsulating reusable code modules (e.g. functions) and performing a meta-search at the function/module level. A bi-level search of this nature may facilitate, a fundamental aspect of creative problem solving.
 
-tags:
-  - Evolutionary Computation
+tags: Evolutionary Computation
 
 # Display this page in the Featured widget?
 featured: true
