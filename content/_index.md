@@ -43,7 +43,7 @@ sections:
     design:
       columns: '1'
 
-  - block: markdown
+  - block: collection
     content:
       title: Publications
       text: "So here are my pubs"
@@ -54,10 +54,4 @@ sections:
     content:
       title: Contact
       text: ""
-      filters:
-        folders:
-          - publication
-        exclude_featured: false
-    design:
-      view: citation
 ---
