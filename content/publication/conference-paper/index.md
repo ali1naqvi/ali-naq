@@ -6,9 +6,6 @@ title: 'Towards Evolving Creative Algorithms: Musical Time Series Forecasting wi
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-
-
-date: '2013-07-01T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).

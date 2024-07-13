@@ -33,12 +33,20 @@ sections:
   - block: collection
     content:
       title: Publications
-      text: "So here are my pubs"
+      text: ""
+      filters:
+        folders:
+          - publication
+        exclude_featured: false
     design:
       view: citation
 
   - block: collection
+    widget: contact
     content:
+      autolink: true
       title: Contact
       text: ""
+    design:
+      columns: '2'
 ---
