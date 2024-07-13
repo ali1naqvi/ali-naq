@@ -48,7 +48,15 @@ sections:
     content:
       autolink: true
       title: Contact
-      text: ""
+        - icon: at-symbol
+          url: 'mailto:alinaqvi8014@gmail.com'
+          label: E-mail Me
+        - icon: brands/x
+          url: https://twitter.com/1NaqviAli
+        - icon: brands/github
+          url: https://github.com/ali1naqvi
+        - icon: brands/linkedin
+          url: https://www.linkedin.com/in/ali-naqvi-8b514b1b5/
     design:
       columns: '2'
 ---
