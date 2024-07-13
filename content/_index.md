@@ -42,12 +42,13 @@ sections:
     design:
       view: citation
 
-  - block: collection
+    - block: collection
     id: contact
     widget: contact
     content:
       autolink: true
       title: Contact
+      links:
         - icon: at-symbol
           url: 'mailto:alinaqvi8014@gmail.com'
           label: E-mail Me
@@ -59,4 +60,5 @@ sections:
           url: https://www.linkedin.com/in/ali-naqvi-8b514b1b5/
     design:
       columns: '2'
+
 ---
