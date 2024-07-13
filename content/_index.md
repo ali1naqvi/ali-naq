@@ -31,6 +31,7 @@ sections:
           parallax: false
 
   - block: collection
+    id: publications
     content:
       title: Publications
       text: ""
@@ -42,6 +43,7 @@ sections:
       view: citation
 
   - block: collection
+    id: contact
     widget: contact
     content:
       autolink: true
