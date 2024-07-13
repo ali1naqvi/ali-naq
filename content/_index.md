@@ -40,9 +40,10 @@ sections:
           - publication
         exclude_featured: false
     design:
-      view: citation
+      #view: citation
+      columns: '2'
 
-    - block: collection
+  - block: collection
     id: contact
     widget: contact
     content:
@@ -57,7 +58,7 @@ sections:
         - icon: brands/github
           url: https://github.com/ali1naqvi
         - icon: brands/linkedin
-          url: https://www.linkedin.com/in/ali-naqvi-8b514b1b5/
+          url: https://www.linkedin.com/in/ali-naqvi-8b514b1b5/ 
     design:
       columns: '2'
 
