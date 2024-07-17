@@ -43,7 +43,7 @@ sections:
       #view: citation
       columns: '2'
 
-  - block: collection
+  - block: contact
     id: contact
     widget: contact
     content:
