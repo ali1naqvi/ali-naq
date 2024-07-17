@@ -44,20 +44,16 @@ sections:
       columns: '2'
 
   - block: contact
-    id: contact
     widget: contact
+    headless: true
+
+    title: Contact
+    subtitle:
+
     content:
-      title: Contact
-      links:
-        - icon: twitter
-          url: https://twitter.com/1NaqviAli
-          label: Twitter
-        - icon: linkedin
-          url: https://www.linkedin.com/in/ali-naqvi-8b514b1b5/
-          label: LinkedIn
-        - icon: github
-          url: https://github.com/ali1naqvi
-          label: GitHub
+      # Automatically link email and phone or display as text?
+      autolink: true
+      
     design:
-      columns: '1'
+      columns: '2'
 ---
