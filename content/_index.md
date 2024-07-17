@@ -44,7 +44,7 @@ sections:
       #view: citation
       columns: '2'
 
-  - block: content
+  - block: collection
     id: contact
     widget: contact
 ---
