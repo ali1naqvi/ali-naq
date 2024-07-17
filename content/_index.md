@@ -40,8 +40,4 @@ sections:
         folders:
           - publication
         exclude_featured: false
-
-  - block: collection
-    id: contact
-    widget: contact
 ---
