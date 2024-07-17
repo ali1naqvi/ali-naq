@@ -40,9 +40,6 @@ sections:
         folders:
           - publication
         exclude_featured: false
-    design:
-      #view: citation
-      columns: '2'
 
   - block: collection
     id: contact

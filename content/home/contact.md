@@ -13,18 +13,17 @@ title: Contact
 subtitle:
 
 content:
-  # Automatically link email and phone or display as text?
-  autolink: true
-  
-  # Email form provider
-  #form:
-  #  provider: netlify
-  #  formspree:
-  #    id:
-  #  netlify:
-      # Enable CAPTCHA challenge to reduce spam?
-  #    captcha: false
-  
+      title: Contact
+      links:
+        - icon: twitter
+          url: https://twitter.com/1NaqviAli
+          label: Twitter
+        - icon: linkedin
+          url: https://www.linkedin.com/in/ali-naqvi-8b514b1b5/
+          label: LinkedIn
+        - icon: github
+          url: https://github.com/ali1naqvi
+          label: GitHub
 design:
-  columns: '2'
+  columns: '1'
 ---
