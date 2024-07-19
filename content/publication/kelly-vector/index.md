@@ -18,19 +18,7 @@ publication_types: ["chapter"]
 publication: ""
 publication_short: ""
 
-abstract: Tangled Program Graphs (TPGs) are highly modular, hierarchical rep-
-resentations for genetic programming that are well-suited to multitask learning in
-visual reinforcement learning and temporal sequence prediction domains. In this
-work, we describe how TPGs can evolve versatile problem solvers that are capa-
-ble of solving multiple problems from different domains simultaneously. A single
-evolved solver can predict actions in discrete and continuous control tasks, as well
-as perform generative time-series prediction. All tasks are partially observable and
-explicitly require the solvers to dynamically update an internal mental model of the
-environment at runtime. We test an expanded set of memory types and operations,
-and show how they benefit TPGs without significant additional computational cost.
-
-# Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+abstract: Tangled Program Graphs (TPGs) are highly modular, hierarchical representations for genetic programming that are well-suited to multitask learning in visual reinforcement learning and temporal sequence prediction domains. In this work, we describe how TPGs can evolve versatile problem solvers that are capable of solving multiple problems from different domains simultaneously. A single evolved solver can predict actions in discrete and continuous control tasks, as well as perform generative time-series prediction. All tasks are partially observable and explicitly require the solvers to dynamically update an internal mental model of the environment at runtime. We test an expanded set of memory types and operations, and show how they benefit TPGs without significant additional computational cost.
 
 tags:
 - Evolutionary Computation
