@@ -17,7 +17,7 @@ main:
 #    url: '#talks'
 #    weight: 40
   - name: Publications
-    url: '/publications'
+    url: '#publications'
     weight: 50
   - name: Resume
     url: uploads/resume.pdf
