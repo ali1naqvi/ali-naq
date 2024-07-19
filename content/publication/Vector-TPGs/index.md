@@ -3,11 +3,11 @@ title: "Evolving Many-Model Problem Solvers"
 authors:
 - "Stephen Kelly"
 - admin
-date: "2019-04-07T00:00:00Z"
+date: "2024-05"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2024-05"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
