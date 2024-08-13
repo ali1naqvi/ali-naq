@@ -3,7 +3,6 @@ title: "Evolving Many-Model Problem Solvers"
 authors:
 - "Stephen Kelly"
 - admin
-date: "2024-08-01"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
