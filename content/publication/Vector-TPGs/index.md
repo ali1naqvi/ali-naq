@@ -3,11 +3,11 @@ title: "Evolving Many-Model Problem Solvers"
 authors:
 - "Stephen Kelly"
 - admin
-date: "2024-05"
+date: "2024-08-01"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2024-05"
+publishDate: ""
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -28,7 +28,7 @@ featured: true
 links:
 - name: 
   url: 
-url_pdf: 
+url_pdf: uploads/StephenKelly_GPT.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

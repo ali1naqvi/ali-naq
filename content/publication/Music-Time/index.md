@@ -9,12 +9,12 @@ authors:
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-06'
+publishDate: '2024-07-01'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['paper-conference']
+publication_types: ['workshop-paper']
 
 # Publication name and optional abbreviated publication name.
 publication: In *Artifical Life 2024*
@@ -32,7 +32,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: uploads/Towards_Creativity.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''
