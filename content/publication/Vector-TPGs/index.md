@@ -20,7 +20,7 @@ publication_types: ["Book Chapter"]
 publication: In *Genetic Programming Theory & Practice XXI*
 publication_short: In *GPTP XXI*
 
-abstract/introduction: Tangled Program Graphs (TPGs) are highly modular, hierarchical representations for genetic programming that are well-suited to multitask learning in temporal sequence prediction tasks such as control and time series forecasting. In this work, we expand the simple scalar register machines traditionally used in TPGs to include vector and matrix memory and operations. This helps TPGs evolve versatile agents that are capable of solving partially-observable control and forecasting problems simultaneously. A single agent can predict actions in discrete and continuous control tasks, as well as perform generative time-series prediction.
+abstract: Tangled Program Graphs (TPGs) are highly modular, hierarchical representations for genetic programming that are well-suited to multitask learning in temporal sequence prediction tasks such as control and time series forecasting. In this work, we expand the simple scalar register machines traditionally used in TPGs to include vector and matrix memory and operations. This helps TPGs evolve versatile agents that are capable of solving partially-observable control and forecasting problems simultaneously. A single agent can predict actions in discrete and continuous control tasks, as well as perform generative time-series prediction.
 tags:
 - Evolutionary Computation
 
