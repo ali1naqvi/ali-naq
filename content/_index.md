@@ -30,8 +30,8 @@ sections:
           position: center
           parallax: false
 
-  - block: collection
-    id: publications
+  - block: pub
+    id: publication
     widget: text
     content:
       title: Publications
