@@ -28,7 +28,7 @@ featured: true
 links:
 - name: 
   url: 
-url_pdf: uploads/StephenKelly_GPT.pdf
+url_pdf: https://ali-naqvi.ca/uploads/StephenKelly_GPT.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''

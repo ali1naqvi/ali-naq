@@ -32,7 +32,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: uploads/Towards_Creativity.pdf
+url_pdf: https://ali-naqvi.ca/uploads/Towards_Creativity.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''
