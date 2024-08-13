@@ -31,13 +31,25 @@ sections:
           parallax: false
 
   - block: collection
-    id: publications
-    widget: pages
-    content:
-      title: Publications
-      text: ""
-      filters:
-        folders:
-          - publication
-        exclude_featured: false
+  id: publications
+  widget: text
+  content:
+    title: Publications
+    text: |
+      - [**Evolving Many-Model Problem Solvers**](StephenKelly_GPT.pdf) 
+        *August 2024*  
+        *Authors: Ali Naqvi, Stephen Kelly*
+        *Accepted as ALIFE2024 Workshop Paper
+      
+      - [**Towards Evolving Creative Algorithms: Musical Time Series Forecasting with Tangled Program Graphs**](uploads/towards_creativity.pdf)  
+        *July 2024*  
+        *Authors: Stephen Kelly, Eddie Zhuang, Ali Naqvi, Tanya Djavaherpour*
+        *Accepted as GPTP2024 Book Chapter 
+      
+      - **Improving Efficiency of Indexed Memory for Tangled Program Graphs**
+        *July 2024*  
+        *Authors: Tanya Djavaherpour, Ali Naqvi, Stephen Kelly*
+        *Submitted to ECTA 2024 as Position Paper
+    filters:
+      exclude_featured: false
 ---
