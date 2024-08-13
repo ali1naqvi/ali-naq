@@ -3,16 +3,16 @@ title: "Evolving Many-Model Problem Solvers"
 authors:
 - "Stephen Kelly"
 - admin
-date: "2024"
+date: "2024-08-01"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2024"
+publishDate: "2024-08-01"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["chapter"]
+publication_types: ["Book Chaper"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""
