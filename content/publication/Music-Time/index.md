@@ -6,6 +6,7 @@ title: 'Towards Evolving Creative Algorithms: Musical Time Series Forecasting wi
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
+  - "Stephen Kelly"
 doi: ''
 
 # Schedule page publish date (NOT publication's date).

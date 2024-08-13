@@ -2,7 +2,9 @@
 title: "Evolving Many-Model Problem Solvers"
 authors:
 - "Stephen Kelly"
+- "Eddie Zhuang"
 - admin
+- "Tanya Djavaherpour"
 date: "2024-08-01"
 doi: ""
 
