@@ -37,9 +37,9 @@ sections:
       title: Publications
       text: "
       - [**Evolving Many-Model Problem Solvers**](StephenKelly_GPT.pdf) 
-        *August 2024*  
-        *Authors: Ali Naqvi, Stephen Kelly*
-        *Accepted as ALIFE2024 Workshop Paper
+        \n*August 2024*  
+        \n*Authors: Ali Naqvi, Stephen Kelly*
+        \n*Accepted as ALIFE2024 Workshop Paper
       \n\n
       - [**Towards Evolving Creative Algorithms: Musical Time Series Forecasting with Tangled Program Graphs**](uploads/towards_creativity.pdf)  
         \n*July 2024*  
