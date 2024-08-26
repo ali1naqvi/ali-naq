@@ -80,6 +80,6 @@ work:
 ---
 
 ## About Me
-I am a Computer Science MSc student researching evolutionary computation at McMaster University, supervised by Dr. Stephen Kelly. Prior to this, I completed my undergraduate degree in Computer Science specializing in AI with a minor in Mathematics at the University of Windsor.
+I am a Computer Science MSc student researching evolutionary computation at McMaster University, supervised by Dr. Stephen Kelly. Prior to this, I completed my undergraduate degree in Computer Science specializing in AI with a minor in Mathematics at the University of Windsor. In my research, I study sequential decision-making models for time series forecasting with a particular interest in developing models that emulate the brain's approach to hierarchical planning.
 
 Outside of academics, I enjoy reading, movies, art, and playing the violin.
