@@ -40,7 +40,7 @@ profiles:
 interests:
   - Evolutionary computation
   - Deep learning
-  - Representation learning
+  - Decision theory/Game theory
 
 education:
   - area: MSc in Computer Science
