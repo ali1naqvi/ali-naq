@@ -30,14 +30,11 @@ sections:
           position: center
           parallax: false
 
-  - block: collection
+  - block: markdown
     id: publications
-    widget: pages
     content:
       title: Publications
-      text: ""
-      filters:
-        folders:
-          - publication
-        exclude_featured: false
+      subtitle: ""
+      text: |
+        View all publications on the [Publications page](/publication/).
 ---
