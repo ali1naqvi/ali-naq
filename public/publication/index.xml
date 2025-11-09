@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Ali Naqvi</title>
+    <link>http://localhost:1313/publication/</link>
+      <atom:link href="http://localhost:1313/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_9174e8c18db2834b.png</url>
+      <title>Publications</title>
+      <link>http://localhost:1313/publication/</link>
+    </image>
+    
+    <item>
+      <title>Evolving Many-Model Problem Solvers</title>
+      <link>http://localhost:1313/publication/vector-tpgs/</link>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/vector-tpgs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards Evolving Creative Algorithms: Musical Time Series Forecasting with Tangled Program Graphs</title>
+      <link>http://localhost:1313/publication/music-time/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/music-time/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

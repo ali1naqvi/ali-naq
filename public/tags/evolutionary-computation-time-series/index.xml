@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Evolutionary Computation, Time Series | Ali Naqvi</title>
+    <link>http://localhost:1313/tags/evolutionary-computation-time-series/</link>
+      <atom:link href="http://localhost:1313/tags/evolutionary-computation-time-series/index.xml" rel="self" type="application/rss+xml" />
+    <description>Evolutionary Computation, Time Series</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_9174e8c18db2834b.png</url>
+      <title>Evolutionary Computation, Time Series</title>
+      <link>http://localhost:1313/tags/evolutionary-computation-time-series/</link>
+    </image>
+    
+    <item>
+      <title>Towards Evolving Creative Algorithms: Musical Time Series Forecasting with Tangled Program Graphs</title>
+      <link>http://localhost:1313/publication/music-time/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/music-time/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
