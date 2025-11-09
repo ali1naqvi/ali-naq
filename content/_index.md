@@ -36,16 +36,16 @@ sections:
       title: Publications
       subtitle: ""
       text: |
-        **Naqvi, A.**, Djavaherpour, T., Vacher, Q., & Kelly, S. (August 2025). Integrating Neuroplasticity into Genetic Programming Agents for Adaptive Decision Making. *2025 Conference on Artificial Life*. (Status: Accepted as Full Paper)
+        1. **Naqvi, A.**, Djavaherpour, T., Vacher, Q., & Kelly, S. (August 2025). Integrating Neuroplasticity into Genetic Programming Agents for Adaptive Decision Making. *2025 Conference on Artificial Life*. (Status: Accepted as Full Paper)
 
-        Djavaherpour, T., **Naqvi, A.**, Vacher, Q., Norouziani, F., & Kelly, S. (August 2025). Genetic Encoding and Shared Knowledge in Reinforcement Learning with Structured Memory. *2025 Conference on Artificial Life*. (Status: Accepted as Full Paper)
+        2. Djavaherpour, T., **Naqvi, A.**, Vacher, Q., Norouziani, F., & Kelly, S. (August 2025). Genetic Encoding and Shared Knowledge in Reinforcement Learning with Structured Memory. *2025 Conference on Artificial Life*. (Status: Accepted as Full Paper)
 
-        Vacher, Q., Kelly, S., **Naqvi, A.**, Beuve, N., Djavaherpour, T., Dardaillon, M., & Desnos, K. (January 2025). *The Genetic and Evolutionary Computation Conference*. (Status: Accepted as Full Paper)
+        3. Vacher, Q., Kelly, S., **Naqvi, A.**, Beuve, N., Djavaherpour, T., Dardaillon, M., & Desnos, K. (January 2025). *The Genetic and Evolutionary Computation Conference*. (Status: Accepted as Full Paper)
 
-        Djavaherpour, T., **Naqvi, A.**, Zhuang, E., & Kelly, S. (June 2024). *Genetic Programming Theory & Practice XXI*. (Status: Accepted as Book Chapter)
+        4. Djavaherpour, T., **Naqvi, A.**, Zhuang, E., & Kelly, S. (June 2024). *Genetic Programming Theory & Practice XXI*. (Status: Accepted as Book Chapter)
 
-        Djavaherpour, T., **Naqvi, A.**, & Kelly, S. (July 2024). *16th International Conference on Evolutionary Computation Theory and Applications*. (Status: Accepted to Conference)
+        5. Djavaherpour, T., **Naqvi, A.**, & Kelly, S. (July 2024). *16th International Conference on Evolutionary Computation Theory and Applications*. (Status: Accepted to Conference)
 
-        **Naqvi, A.**, & Kelly, S. (June 2024). *2024 Conference on Artificial Life*. (Status: Accepted as Workshop Paper)
+        6. **Naqvi, A.**, & Kelly, S. (June 2024). *2024 Conference on Artificial Life*. (Status: Accepted as Workshop Paper)
         
 ---

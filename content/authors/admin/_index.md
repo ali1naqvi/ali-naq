@@ -80,6 +80,7 @@ work:
 ---
 
 ## About Me
-I am a Computer Science MSc student researching evolutionary computation at McMaster University, supervised by Dr. Stephen Kelly. Prior to this, I completed my undergraduate degree in Computer Science specializing in AI with a minor in Mathematics at the University of Windsor. In my research, I study sequential decision-making models for time series forecasting with a particular interest in developing models that emulate the brain's approach to hierarchical planning.
 
-Outside of academics, I enjoy reading, movies, art, and playing the violin.
+I’m a first-year PhD student in Computer Science at McMaster University, co-supervised by Stephen Kelly and Reuven Dukas. My research explores how animal-like behaviour emerges and evolves in artificial living systems. I’m especially interested in the evolutionary origins of biological complexity and how it manifests across levels of organization, from microbes like *E. coli* to multicellular organisms.
+
+Before starting the PhD, I completed my MSc at McMaster. Outside the lab, you’ll usually find me reading, watching films, or playing the violin.
