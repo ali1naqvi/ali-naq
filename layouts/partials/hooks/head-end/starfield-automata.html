@@ -17,5 +17,32 @@
   #section-resume-biography-3 .home-section-bg.bg-image {
     background-image: none !important;
   }
+  
+  /* Fix text color in light mode - make text black even though section has dark class */
+  html:not(.dark) #section-resume-biography-3 .portrait-title,
+  html:not(.dark) #section-resume-biography-3 .portrait-title *,
+  html:not(.dark) #section-resume-biography-3 .network-icon,
+  html:not(.dark) #section-resume-biography-3 .network-icon *,
+  html:not(.dark) #section-resume-biography-3 .bio-text,
+  html:not(.dark) #section-resume-biography-3 .bio-text *,
+  html:not(.dark) #section-resume-biography-3 .prose,
+  html:not(.dark) #section-resume-biography-3 .prose *,
+  html:not(.dark) #section-resume-biography-3 h1,
+  html:not(.dark) #section-resume-biography-3 h2,
+  html:not(.dark) #section-resume-biography-3 h3,
+  html:not(.dark) #section-resume-biography-3 p,
+  html:not(.dark) #section-resume-biography-3 div,
+  html:not(.dark) #section-resume-biography-3 span {
+    color: #000000 !important;
+  }
+  
+  /* Ensure links are visible in light mode */
+  html:not(.dark) #section-resume-biography-3 a {
+    color: #1e40af !important;
+  }
+  
+  html:not(.dark) #section-resume-biography-3 a:hover {
+    color: #1e3a8a !important;
+  }
 </style>
 
