@@ -11,6 +11,8 @@
       if (!this.section) return;
 
       this.isDarkMode = document.documentElement.classList.contains('dark');
+      this.initRetryCount = 0;
+      this.maxInitRetries = 20; // Max 2 seconds of retries
 
       // --- Rendering & timing ---
       this.animationId = null;
@@ -65,15 +67,30 @@
     init() {
       this.resize();
       
-      // Only proceed if canvas has valid dimensions
-      if (this.canvas.width === 0 || this.canvas.height === 0) {
+      // Only proceed if canvas has valid dimensions and grid is initialized
+      if (!this.grid || this.canvas.width === 0 || this.canvas.height === 0) {
         // Retry after a short delay if section isn't ready
-        setTimeout(() => this.init(), 100);
-        return;
+        this.initRetryCount++;
+        if (this.initRetryCount < this.maxInitRetries) {
+          setTimeout(() => this.init(), 100);
+        } else {
+          // If max retries reached, try to initialize anyway with minimal size
+          console.warn('Starfield automata: Section not ready after max retries, initializing with default size');
+          if (!this.grid) {
+            this.canvas.width = 100;
+            this.canvas.height = 100;
+            this.resize(); // Force resize to initialize buffers
+          }
+        }
+        if (!this.grid) return; // Still can't proceed
       }
+      
+      // Reset retry count on success
+      this.initRetryCount = 0;
       
       this.initStars();
       this.initGrid();
+      
       // Mark canvas as ready after initial setup
       if (this.canvas) {
         // Use requestAnimationFrame to ensure canvas is rendered before showing
@@ -81,6 +98,8 @@
           this.canvas.classList.add('ready');
         });
       }
+      
+      // Start animation
       this.animate();
     }
 
@@ -92,8 +111,8 @@
       const width = Math.max(1, Math.floor(rect.width));
       const height = Math.max(1, Math.floor(rect.height));
       
-      // Only proceed if section has valid dimensions
-      if (width === 0 || height === 0) {
+      // Only proceed if section has valid dimensions (at least 1px)
+      if (width <= 0 || height <= 0) {
         return;
       }
       
@@ -279,6 +298,11 @@
     }
 
     animate() {
+      // Ensure canvas is visible once animation starts
+      if (this.canvas && !this.canvas.classList.contains('ready')) {
+        this.canvas.classList.add('ready');
+      }
+      
       const now = performance.now();
       const dt = now - this.lastTime;
       this.lastTime = now;

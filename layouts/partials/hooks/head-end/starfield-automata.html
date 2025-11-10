@@ -13,7 +13,7 @@
     background-image: none !important;
   }
   
-  /* Hide canvas initially until properly initialized */
+  /* Canvas styling - visible by default, will be shown when ready */
   #starfield-canvas {
     position: absolute;
     top: 0;
@@ -23,14 +23,12 @@
     z-index: 0;
     pointer-events: none;
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.5s ease-in;
   }
   
   /* Show canvas once it's ready */
   #starfield-canvas.ready {
     opacity: 1;
-    visibility: visible;
   }
   
   /* Fix text color in light mode - make text black even though section has dark class */
