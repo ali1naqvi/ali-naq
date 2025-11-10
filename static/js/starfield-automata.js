@@ -64,8 +64,23 @@
     // --- Init & layout ---
     init() {
       this.resize();
+      
+      // Only proceed if canvas has valid dimensions
+      if (this.canvas.width === 0 || this.canvas.height === 0) {
+        // Retry after a short delay if section isn't ready
+        setTimeout(() => this.init(), 100);
+        return;
+      }
+      
       this.initStars();
       this.initGrid();
+      // Mark canvas as ready after initial setup
+      if (this.canvas) {
+        // Use requestAnimationFrame to ensure canvas is rendered before showing
+        requestAnimationFrame(() => {
+          this.canvas.classList.add('ready');
+        });
+      }
       this.animate();
     }
 
@@ -74,8 +89,16 @@
       const rect = this.section.getBoundingClientRect();
 
       // Size the main canvas to section size
-      this.canvas.width = Math.max(1, Math.floor(rect.width));
-      this.canvas.height = Math.max(1, Math.floor(rect.height));
+      const width = Math.max(1, Math.floor(rect.width));
+      const height = Math.max(1, Math.floor(rect.height));
+      
+      // Only proceed if section has valid dimensions
+      if (width === 0 || height === 0) {
+        return;
+      }
+      
+      this.canvas.width = width;
+      this.canvas.height = height;
       const w = this.canvas.width;
       const h = this.canvas.height;
 

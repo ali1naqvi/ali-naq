@@ -1,5 +1,19 @@
 <script src="/js/starfield-automata.js" defer></script>
 <style>
+  /* Ensure the canvas container is properly positioned and contains the canvas */
+  #section-resume-biography-3 .home-section-bg {
+    background-image: none !important;
+    position: relative !important;
+    overflow: hidden !important;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #section-resume-biography-3 .home-section-bg.bg-image {
+    background-image: none !important;
+  }
+  
+  /* Hide canvas initially until properly initialized */
   #starfield-canvas {
     position: absolute;
     top: 0;
@@ -8,14 +22,15 @@
     height: 100%;
     z-index: 0;
     pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in;
   }
   
-  #section-resume-biography-3 .home-section-bg {
-    background-image: none !important;
-  }
-  
-  #section-resume-biography-3 .home-section-bg.bg-image {
-    background-image: none !important;
+  /* Show canvas once it's ready */
+  #starfield-canvas.ready {
+    opacity: 1;
+    visibility: visible;
   }
   
   /* Fix text color in light mode - make text black even though section has dark class */
