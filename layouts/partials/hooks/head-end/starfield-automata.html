@@ -78,15 +78,8 @@ drawMountains() {
 clear() {
   const w = this.canvas.width;
   const h = this.canvas.height;
-  const g = this.ctx.createLinearGradient(0, 0, 0, h);
-  if (this.isDarkMode) {
-    g.addColorStop(0, 'rgba(6, 8, 20, 1)');
-    g.addColorStop(1, 'rgba(12, 18, 36, 1)');
-  } else {
-    g.addColorStop(0, 'rgba(230, 245, 255, 1)');
-    g.addColorStop(1, 'rgba(204, 232, 255, 1)');
-  }
-  this.ctx.fillStyle = g;
+  // Solid light, light blue background (same in dark/light themes)
+  this.ctx.fillStyle = 'rgba(234, 246, 255, 1)';
   this.ctx.fillRect(0, 0, w, h);
 }
 
