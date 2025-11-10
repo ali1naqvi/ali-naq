@@ -1,20 +1,195 @@
-name: Updater (WIP)
+// File: /Users/alinaqvi/Desktop/ali-naq/static/js/starfield-automata.js
 
-on:
-  schedule:
-    - cron: 0 0 * * 0
-  workflow_dispatch:
+class StarfieldAutomata {
+  constructor(canvasId, sectionId) {
+    this.canvas = document.getElementById(canvasId);
+    this.ctx = this.canvas.getContext('2d');
+    this.section = document.getElementById(sectionId);
 
-permissions:
-  contents: write
+    this.cols = 0;
+    this.rows = 0;
+    this.grid = null;
+    this.nextGrid = null;
+    this.age = null;
+    this.nextAge = null;
 
-jobs:
-  update:
-    if: github.repository_owner == 'HugoBlox'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: HugoBlox/gh-action-updater@v1.2.2
-        with:
-          feed-url: https://hugoblox.com/rss.xml
-          readme-section: news
-          branch: main
+    this.cellSize = 3;
+    this.starSize = 1.5;
+
+    this.accumStars = 0;         // accumulator for star twinkle
+    this.maxAge = 10;            // cells auto-die after this many steps to prevent messy growth
+
+    this.gridStepMs = 160;        // grid update every ~160ms
+    this.starStepMs = 120;        // stars update every ~120ms
+
+    this.stars = [];
+    this.starCount = 200;
+
+    this.noiseBirth = 0.0002;
+    this.noiseDeath = 0.0001;
+
+    this.lifeRules = [
+      { birth: [3], survival: [2, 3] },
+      { birth: [3, 6], survival: [2, 3] },
+      { birth: [3], survival: [2, 3, 4] }
+    ];
+
+    this.currentRule = this.lifeRules[0];
+
+    this.init();
+  }
+
+  init() {
+    this.resize();
+    this.initStars();
+    this.initGrid();
+
+    this.lastGridUpdate = performance.now();
+    this.lastStarUpdate = performance.now();
+
+    requestAnimationFrame(this.loop.bind(this));
+  }
+
+  resize() {
+    this.cols = Math.floor(this.canvas.width / this.cellSize);
+    this.rows = Math.floor(this.canvas.height / this.cellSize);
+
+    this.grid = new Uint8Array(this.rows * this.cols);
+    this.nextGrid = new Uint8Array(this.rows * this.cols);
+    this.age = new Uint8Array(this.rows * this.cols);
+    this.nextAge = new Uint8Array(this.rows * this.cols);
+  }
+
+  initStars() {
+    this.stars = [];
+    for (let i = 0; i < this.starCount; i++) {
+      this.stars.push({
+        x: Math.random() * this.canvas.width,
+        y: Math.random() * this.canvas.height,
+        size: Math.random() * this.starSize + 0.5,
+        twinkleSpeed: Math.random() * 0.008 + 0.004,
+        twinklePhase: Math.random() * Math.PI * 2
+      });
+    }
+  }
+
+  initGrid() {
+    const N = this.rows * this.cols;
+    this.age.fill(0);
+    const seedDensity = 0.03; // 3% cells alive initially (less growth)
+    for (let i = 0; i < N; i++) {
+      this.grid[i] = Math.random() < seedDensity ? 1 : 0;
+    }
+    this.currentRule = this.lifeRules[0];
+  }
+
+  updateGrid() {
+    const g = this.grid, ng = this.nextGrid;
+    const age = this.age, na = this.nextAge;
+    const rows = this.rows, cols = this.cols;
+    const birth = this.currentRule.birth;
+    const survival = this.currentRule.survival;
+
+    for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+        const idx = r * cols + c;
+        let count = 0;
+        for (let dr = -1; dr <= 1; dr++) {
+          for (let dc = -1; dc <= 1; dc++) {
+            if (dr === 0 && dc === 0) continue;
+            const rr = r + dr;
+            const cc = c + dc;
+            if (rr >= 0 && rr < rows && cc >= 0 && cc < cols) {
+              count += g[rr * cols + cc];
+            }
+          }
+        }
+
+        let nextVal = 0;
+        if (g[idx] === 1) {
+          nextVal = survival.includes(count) ? 1 : 0;
+          if (nextVal === 0 && Math.random() < this.noiseDeath) {
+            nextVal = 1;
+          }
+        } else {
+          nextVal = birth.includes(count) ? 1 : 0;
+          if (nextVal === 1 && Math.random() < this.noiseBirth) {
+            nextVal = 0;
+          }
+        }
+
+        if (nextVal === 1) {
+          let a = age[idx] + 1;
+          if (a > this.maxAge) {
+            nextVal = 0;
+            na[idx] = 0;
+          } else {
+            na[idx] = a;
+          }
+        } else {
+          na[idx] = 0;
+        }
+
+        ng[idx] = nextVal;
+      }
+    }
+
+    this.nextGrid = g;
+    this.grid = ng;
+    this.nextAge = age;
+    this.age = na;
+  }
+
+  drawGrid() {
+    const baseR = 180;
+    const baseG = 225;
+    const baseB = 255;
+
+    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+
+    for (let r = 0; r < this.rows; r++) {
+      for (let c = 0; c < this.cols; c++) {
+        if (this.grid[r * this.cols + c] === 1) {
+          this.ctx.fillStyle = `rgb(${baseR}, ${baseG}, ${baseB})`;
+          this.ctx.fillRect(c * this.cellSize, r * this.cellSize, this.cellSize, this.cellSize);
+        }
+      }
+    }
+  }
+
+  loop() {
+    const now = performance.now();
+
+    if (now - this.lastGridUpdate > this.gridStepMs) {
+      this.updateGrid();
+      this.lastGridUpdate = now;
+    }
+
+    if (now - this.lastStarUpdate > this.starStepMs) {
+      this.updateStars();
+      this.lastStarUpdate = now;
+    }
+
+    this.drawGrid();
+    this.drawStars();
+
+    requestAnimationFrame(this.loop.bind(this));
+  }
+
+  updateStars() {
+    this.accumStars += 1;
+    for (const star of this.stars) {
+      star.twinklePhase += star.twinkleSpeed;
+    }
+  }
+
+  drawStars() {
+    for (const star of this.stars) {
+      const brightness = (Math.sin(star.twinklePhase) + 1) / 2;
+      this.ctx.fillStyle = `rgba(255, 255, 255, ${brightness})`;
+      this.ctx.beginPath();
+      this.ctx.arc(star.x, star.y, star.size, 0, 2 * Math.PI);
+      this.ctx.fill();
+    }
+  }
+}
