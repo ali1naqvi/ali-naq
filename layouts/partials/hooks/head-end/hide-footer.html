@@ -37,5 +37,38 @@
   #publications .lg\:prose-xl {
     font-size: 1.25rem !important;
   }
+  
+  /* Fix text color in light mode - make it dark */
+  html:not(.dark) body {
+    color: #1f2937 !important; /* gray-800 */
+  }
+  
+  html:not(.dark) .blox-resume-biography-3,
+  html:not(.dark) .blox-resume-biography-3 * {
+    color: #1f2937 !important; /* gray-800 */
+  }
+  
+  html:not(.dark) .portrait-title,
+  html:not(.dark) .portrait-title * {
+    color: #1f2937 !important;
+  }
+  
+  html:not(.dark) .bio-text,
+  html:not(.dark) .bio-text * {
+    color: #1f2937 !important;
+  }
+  
+  html:not(.dark) h1,
+  html:not(.dark) h2,
+  html:not(.dark) h3,
+  html:not(.dark) h4,
+  html:not(.dark) h5,
+  html:not(.dark) h6 {
+    color: #111827 !important; /* gray-900 for headings */
+  }
+  
+  html:not(.dark) p {
+    color: #1f2937 !important;
+  }
 </style>
 
