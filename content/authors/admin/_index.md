@@ -38,9 +38,9 @@ profiles:
     #url: https://orcid.org/
 
 interests:
-  - Evolutionary computation
-  - Deep learning
-  - Decision theory/Game theory
+  - Evolutionary Computation
+  - Artificial Life
+  - Bio-Inspired Computing
 
 education:
   - area: MSc in Computer Science
