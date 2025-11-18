@@ -71,20 +71,24 @@
     color: #1f2937 !important;
   }
   
-  /* Keep CV button static with dark mode appearance */
-  a[href*="CV.pdf"] {
+  /* Keep CV download button on home page static with dark mode appearance */
+  #section-resume-biography-3 a[href*="CV.pdf"],
+  .blox-resume-biography-3 a[href*="CV.pdf"] {
     background-color: #1f2937 !important; /* gray-800 */
     color: #9ca3af !important; /* gray-400 */
     border-color: #4b5563 !important; /* gray-600 */
   }
   
-  a[href*="CV.pdf"]:hover {
+  #section-resume-biography-3 a[href*="CV.pdf"]:hover,
+  .blox-resume-biography-3 a[href*="CV.pdf"]:hover {
     background-color: #374151 !important; /* gray-700 */
     color: #ffffff !important; /* white */
   }
   
-  a[href*="CV.pdf"]:focus {
+  #section-resume-biography-3 a[href*="CV.pdf"]:focus,
+  .blox-resume-biography-3 a[href*="CV.pdf"]:focus {
     --tw-ring-color: #374151 !important; /* gray-700 */
+    ring-color: #374151 !important; /* gray-700 */
   }
 </style>
 
