@@ -26,14 +26,12 @@ profiles:
   - icon: at-symbol
     url: 'mailto:alinaqvi8014@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/1NaqviAli
+  - icon: academicons/google-scholar
+    url: https://scholar.google.ca/citations?user=QoKg4akAAAAJ&hl=en
   - icon: brands/github
     url: https://github.com/ali1naqvi
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/ali-naqvi-8b514b1b5/
-  #- icon: #academicons/google-scholar
-   # url: #https://scholar.google.com/
   #- icon: academicons/orcid
     #url: https://orcid.org/
 

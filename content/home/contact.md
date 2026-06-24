@@ -15,9 +15,9 @@ subtitle:
 content:
       title: Contact
       links:
-        - icon: twitter
-          url: https://twitter.com/1NaqviAli
-          label: Twitter
+        - icon: academicons/google-scholar
+          url: https://scholar.google.ca/citations?user=QoKg4akAAAAJ&hl=en
+          label: Google Scholar
         - icon: linkedin
           url: https://www.linkedin.com/in/ali-naqvi-8b514b1b5/
           label: LinkedIn

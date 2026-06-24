@@ -25,9 +25,35 @@
     max-width: 100% !important;
   }
   
-  #publications .prose p {
-    font-size: 1.25rem !important;
-    margin-bottom: 1rem !important;
+  #publications .prose ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  #publications .prose li {
+    font-size: 1.125rem !important;
+    line-height: 1.65 !important;
+    margin: 0 0 1.25rem !important;
+    padding-left: 1.4rem !important;
+    text-indent: -1.4rem;
+  }
+
+  #publications .prose li::before {
+    color: #6b7280;
+    content: "•";
+    display: inline-block;
+    font-weight: 600;
+    text-indent: 0;
+    width: 1.4rem;
+  }
+
+  #publications .prose li:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  #publications .prose a {
+    overflow-wrap: anywhere;
   }
   
   #publications .prose-lg {
@@ -90,5 +116,19 @@
     --tw-ring-color: #374151 !important; /* gray-700 */
     ring-color: #374151 !important; /* gray-700 */
   }
-</style>
 
+  /* A high-density source keeps the larger homepage portrait crisp. */
+  #section-resume-biography-3 .avatar-wrapper,
+  .blox-resume-biography-3 .avatar-wrapper {
+    height: 260px;
+    width: 260px;
+  }
+
+  #section-resume-biography-3 .resume-biography .avatar,
+  .blox-resume-biography-3 .resume-biography .avatar {
+    height: 260px;
+    max-height: 260px;
+    max-width: 260px;
+    width: 260px;
+  }
+</style>
