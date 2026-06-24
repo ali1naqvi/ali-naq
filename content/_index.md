@@ -40,6 +40,8 @@ sections:
 
         - **Naqvi, A.**, & Kelly, S. (2026). *Dynamic Vector and Matrix Memory for Tangled Program Graphs.* In L. Manzoni, S. Cussat-Blanc, & Q. Chen (Eds.), *Genetic Programming: EuroGP 2026* (Lecture Notes in Computer Science, Vol. 16521). Springer, Cham. [https://doi.org/10.1007/978-3-032-23005-8_11](https://doi.org/10.1007/978-3-032-23005-8_11)
 
+        - Roy, X. H., **Naqvi, A.**, Shao, X., & Kelly, S. (2026). *In Search of Larger Populations: Rethinking GPU Execution for Genetic Programming in Artificial Life.* In *Proceedings of the 2026 Artificial Life Conference*. MIT Press.
+
         - Djavaherpour, T., **Naqvi, A.**, Zhuang, E., & Kelly, S. (2025). *Evolving Many-Model Agents with Vector and Matrix Operations in Tangled Program Graphs.* In S. M. Winkler, W. Banzhaf, T. Hu, & A. Lalejini (Eds.), *Genetic Programming Theory and Practice XXI* (Genetic and Evolutionary Computation). Springer, Singapore. [https://doi.org/10.1007/978-981-96-0077-9_5](https://doi.org/10.1007/978-981-96-0077-9_5)
 
         - **Naqvi, A.**, Djavaherpour, T., Vacher, Q., & Kelly, S. (2025). *Integrating Neuroplasticity into Genetic Programming Agents for Adaptive Decision Making.* In *Proceedings of the Artificial Life Conference 2025: Ciphers of Life* (p. 69). ASME. [https://doi.org/10.1162/ISAL.a.897](https://doi.org/10.1162/ISAL.a.897)
